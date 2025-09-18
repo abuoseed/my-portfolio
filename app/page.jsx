@@ -26,7 +26,7 @@ const Home = () => {
                variant="outline"
                size="lg"
               >
-                <a className="uppercase flex items-cente gap-2" href="/files/Abdullah Ali CV.pdf" download='my_cv.pdf'>
+                <a className="uppercase flex items-cente gap-2" href="/files/Abdullah Ali.pdf" download='my_cv.pdf'>
                 <span>Dawnload CV</span>
                 <FiDownload className="text-xl"/>
                 </a>
