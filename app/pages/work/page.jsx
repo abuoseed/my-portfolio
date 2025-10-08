@@ -15,53 +15,44 @@ const projects=[
   {
     num: '01',
     category:'frontend', 
-    title:'project 1',
-    description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis possimus adipisci cumque itaque nisi nulla repellendus, magni.',
-    stack:[{name:'html 5'},{name:'Css 3'},{name:'javascript'}],
-    image:'/assets/work/project1.png',
-    live:'',
-    github:""
+    title:'moviesapp',
+    description:'This is a modern and responsive Movie App built using HTML, CSS, and JavaScript, with Tailwind CSS for styling.The app provides users with an intuitive interface to explore movies, view details, and experience a smooth, visually engaging design.',
+    stack:[{name:'html 5'},{name:'Css 3'},{name:'javascript'},{name:'tailwand.css'}],
+    image:'/assets/work/project-2.png',
+    live:'https://movies-app-javascript-native-vqrc-git-main-abuoseeds-projects.vercel.app?_vercel_share=rqKHSPAnmoXUs5KhuEno4Wv5C3X7jBfD',
+    github:"https://github.com/abuoseed/movies-app-javascript-native/tree/main/Movies_App-master"
   },
   {
     num: '02',
     category:'fullstack', 
-    title:'project 2',
-    description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis possimus adipisci cumque itaque nisi nulla repellendus, magni.',
-    stack:[{name:'Next.js'},{name:'tailwind.css'},{name:'Node.js'}],
-    image:'/assets/work/project1.png',
-    live:'',
-    github:""
+    title:'e-commerce',
+    description:'This is a modern and fully responsive E-Commerce Web Application built with React.js.The project delivers a smooth shopping experience with dynamic product management, real-time data handling, and a clean, elegant user interface.',
+    stack:[{name:'react.js'},{name:'tailwind.css'},{name:'supabase'}],
+    image:'/assets/work/project-1.png',
+    live:'https://baaskett.netlify.app/',
+    github:"https://github.com/ibrahimeltbakh/Basket"
   },
   {
     num: '03',
-    category:'frontend', 
-    title:'project 3',
-    description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis possimus adipisci cumque itaque nisi nulla repellendus, magni.',
-    stack:[{name:'html 5'},{name:'Css 3'},{name:'javascript'}],
-    image:'/assets/work/project1.png',
-    live:'',
-    github:""
+    category:'fullstack', 
+    title:'restaurant',
+    description:'This is a modern, fully responsive restaurant website built with Next.js.The project combines elegant design, smooth animations, and a seamless user experience using cutting-edge frontend technologies.',
+    stack:[{name:'html 5'},{name:'Css 3'},{name:'next.js'},{name:'supabase'},{name:'shadcn/ui'}],
+    image:'/assets/work/project-3.png',
+    live:'https://restaurant-project-git-main-abuoseeds-projects.vercel.app?_vercel_share=AtEemxbDQrWsl3P4NjpaipIINwqV3Sfy',
+    github:"https://github.com/abuoseed/restaurant-project"
   },
   {
     num: '04',
     category:'frontend', 
-    title:'project 4',
-    description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis possimus adipisci cumque itaque nisi nulla repellendus, magni.',
-    stack:[{name:'html 5'},{name:'Css 3'},{name:'javascript'}],
-    image:'/assets/work/project1.png',
-    live:'',
-    github:""
+    title:'waqeack',
+    description:'Waq3ak is a modern web platform designed to offer a variety of digital and electronic services.The project focuses on creating a sleek, professional interface and smooth user interactions using a modern frontend stack.Although the site is not yet fully responsive, it demonstrates a strong foundation for scalability and performance.',
+    stack:[{name:'html 5'},{name:'Css 3'},{name:'next.js'},{name:'typescript'}],
+    image:'/assets/work/project-4.png',
+    live:'https://waqeack-git-main-abuoseeds-projects.vercel.app',
+    github:"https://github.com/abuoseed/next-app-with-typesctipt"
   },
-  {
-    num: '05',
-    category:'frontend', 
-    title:'project 5',
-    description:'Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis possimus adipisci cumque itaque nisi nulla repellendus, magni.',
-    stack:[{name:'html 5'},{name:'Css 3'},{name:'javascript'}],
-    image:'/assets/work/project1.png',
-    live:'',
-    github:""
-  }]
+ ]
   
 const Work = () => {
   const [project, setproject]=useState(projects[0])
@@ -137,7 +128,7 @@ const handelslidechange=(swiper)=>{
                   <div className="h-[460px] relative group flex justify-center items-center bg-pink-50/20">
                     <div className=""></div>
                     <div className="">
-
+                      <Image src={project.image} alt={project.title} width={900} height={600} className='w-full h-full object-cover group-hover:scale-105 transition-all duration-500'/>
                     </div>
                   </div>
                 </SwiperSlide>

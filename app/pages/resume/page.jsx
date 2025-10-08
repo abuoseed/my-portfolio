@@ -5,7 +5,7 @@ import { SiTailwindcss, SiNextdotjs } from "react-icons/si"
 const about = {
   title: 'about me',
   description:
-    'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repudiandae rerum, harum similique cumque reiciendis delectus beatae quae consequatur at illo omnis facere asperiores accusantium, quia consequuntur eveniet explicabo sed quaerat?',
+    'A brief introduction about who I am as a developer — passionate about crafting modern, user-friendly web experiences. I enjoy turning ideas into reality through clean code, creative design, and thoughtful functionality.',
   info: [
     {
       feilName: 'name',
@@ -57,39 +57,34 @@ const about = {
 const myprojects = {
   icon: 'assets/resume/badge.svg',
   title: 'My Projects',
-  description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, totam.',
+  description: 'A showcase of my featured projects, highlighting creativity, technical skills, and problem-solving abilities. Each project demonstrates my experience with modern web technologies and my passion for building clean, functional, and visually appealing interfaces.',
   items: [
     {
-    company: 'tech solutions inc.',
-    position:'full stack devloper',
-    duration:'2022 - present'
+    project: 'Movies App',
+    position:'front end devloper',
+    duration:'12 days'
   },
     {
-    company: 'tech solutions inc.',
+    project: 'baaskett Ecommerce.',
     position:'full stack devloper',
-    duration:'2022 - present'
+    duration:'27 days'
   },
     {
-    company: 'tech solutions inc.',
+    project: 'restaurant app.',
     position:'full stack devloper',
-    duration:'2022 - present'
+    duration:'23 days'
   },
     {
-    company: 'tech solutions inc.',
-    position:'full stack devloper',
-    duration:'2022 - present'
-  },
-    {
-    company: 'tech solutions inc.',
-    position:'full stack devloper',
-    duration:'2022 - present'
+    project: 'waQeack.',
+    position:'front end devloper',
+    duration:'8 days'
   },
 ]
 }
 const education = {
   icon: 'assets/resume/cap.svg',
   title: 'my education',
-  description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, totam.',
+  description: 'A summary of my academic background and continuous learning journey in technology and development. This section reflects my commitment to growing my knowledge and staying up to date with the latest web trends and best practices.',
   items: [
     {
       institution: 'online course with AMIt learning',
@@ -106,7 +101,7 @@ const education = {
 const skills = {
 
   title: 'my skills',
-  description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, totam.',
+  description: 'A collection of my core technical and creative skills, ranging from frontend development and UI design to backend integration. These skills reflect my ability to deliver high-quality, responsive, and scalable digital solutions.',
   skillsList: [
     {
       icon: <FaHtml5 />,
@@ -186,10 +181,10 @@ const Resume = () => {
                   {myprojects.items.map((item, index)=>{
                     return <li className="bg-[#232329] h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1" key={index}>
                       <span className="text-emerald-500">{item.duration}</span>
-                      <h3 className="text-xl max-w-[260px] min-h-[60px] text-center lg:text-left">{item.position}</h3>
+                      <h3 className="text-xl max-w-[260px] min-h-[60px] text-center lg:text-left">{item.project}</h3>
                       <div className="flex items-center gap-3">
                         <span className="w-[6px] h-[6px] rounded-full bg-emerald-500"></span>
-                        <p className="text-white/60">{item.company}</p>
+                        <p className="text-white/60">{item.position}</p>
                       </div>
                     </li>
                   })}
